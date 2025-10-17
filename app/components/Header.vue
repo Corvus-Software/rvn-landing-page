@@ -18,49 +18,36 @@
           </NuxtLink>
         </div>
 
+        <!-- Desktop nav -->
         <div class="hidden md:flex items-center space-x-8">
           <NuxtLink
-            to="/features"
+            v-for="item in navItems"
+            :key="item.to"
+            :to="item.to"
             class="header-link relative group text-white hover:text-accent"
           >
-            Features
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
-            ></span>
-          </NuxtLink>
-          <NuxtLink
-            to="/analysis"
-            class="header-link relative group text-white hover:text-accent"
-          >
-            Analysis
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
-            ></span>
-          </NuxtLink>
-          <NuxtLink
-            to="/about-us"
-            class="header-link relative group text-white hover:text-accent"
-          >
-            About Us
+            {{ item.label }}
             <span
               class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
             ></span>
           </NuxtLink>
         </div>
 
-        <NuxtLink to="/waitlist">
-          <div class="hidden md:flex items-center space-x-4">
-            <button
-              class="header-link-btn px-10 py-4 bg-black text-white rounded-full font-bold hover:bg-accent hover:border-accent hover:text-white transition-colors duration-200 shadow-md"
-            >
-              Join Waitlist
-            </button>
-          </div>
+        <!-- Desktop CTA -->
+        <NuxtLink to="/waitlist" class="hidden md:flex">
+          <button
+            class="header-link-btn px-10 py-4 bg-black text-white rounded-full font-bold hover:bg-accent hover:border-accent hover:text-white transition-colors duration-200 shadow-md"
+          >
+            Join Waitlist
+          </button>
         </NuxtLink>
 
+        <!-- Mobile menu toggle -->
         <button
           @click="mobileMenuOpen = !mobileMenuOpen"
           class="md:hidden p-2 text-white hover:text-accent transition-colors"
+          :aria-expanded="mobileMenuOpen ? 'true' : 'false'"
+          aria-controls="mobile-menu"
         >
           <svg
             v-if="!mobileMenuOpen"
@@ -93,40 +80,31 @@
         </button>
       </div>
 
+      <!-- Mobile menu -->
       <div
         v-if="mobileMenuOpen"
+        id="mobile-menu"
         class="md:hidden py-4 border-t border-muted/20"
       >
-        <div class="flex flex-col space-y-4">
+        <div class="flex flex-col space-y-2">
           <NuxtLink
-            to="/features"
-            class="header-link block px-4 py-2 text-white hover:text-accent transition-colors"
+            v-for="item in navItems"
+            :key="item.to"
+            :to="item.to"
+            @click="mobileMenuOpen = false"
+            class="header-link block px-4 py-3 text-white hover:text-accent transition-colors"
           >
-            Features
+            {{ item.label }}
           </NuxtLink>
-          <NuxtLink
-            to="/how-it-works"
-            class="header-link block px-4 py-2 text-white hover:text-accent transition-colors"
-          >
-            How It Works
+
+          <NuxtLink to="/waitlist" class="px-4">
+            <button
+              @click="mobileMenuOpen = false"
+              class="header-link w-full px-6 py-3 border-2 border-primary bg-black text-white rounded-full font-bold hover:bg-accent hover:border-accent hover:text-white transition-colors duration-200 shadow-md"
+            >
+              Join Waitlist
+            </button>
           </NuxtLink>
-          <NuxtLink
-            to="/pricing"
-            class="header-link block px-4 py-2 text-white hover:text-accent transition-colors"
-          >
-            Pricing
-          </NuxtLink>
-          <NuxtLink
-            to="/docs"
-            class="header-link block px-4 py-2 text-white hover:text-accent transition-colors"
-          >
-            Docs
-          </NuxtLink>
-          <button
-            class="header-link mx-4 px-6 py-2.5 border-2 border-primary bg-black text-white rounded-full font-bold hover:bg-accent hover:border-accent hover:text-white transition-colors duration-200 shadow-md"
-          >
-            Join Waitlist
-          </button>
         </div>
       </div>
     </nav>
@@ -134,20 +112,38 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted, watch } from "vue";
+import { useRoute } from "#imports";
+
 const mobileMenuOpen = ref(false);
 const scrolled = ref(false);
+
+// single source of truth for nav items (desktop & mobile)
+const navItems = [
+  { label: "Features", to: "/features" },
+  { label: "Analysis", to: "/analysis" },
+  { label: "About Us", to: "/about-us" },
+];
 
 onMounted(() => {
   const handleScroll = () => {
     scrolled.value = window.scrollY > 20;
   };
-
   window.addEventListener("scroll", handleScroll);
-
+  handleScroll();
   onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
   });
 });
+
+// close mobile menu on route change
+const route = useRoute();
+watch(
+  () => route.fullPath,
+  () => {
+    mobileMenuOpen.value = false;
+  }
+);
 </script>
 
 <style scoped>
