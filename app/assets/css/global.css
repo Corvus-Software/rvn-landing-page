@@ -1,0 +1,26 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@600&display=swap');
+
+/* Global font classes */
+.font-general {
+  font-family: 'General Sans', sans-serif;
+}
+
+/* Header specific styles */
+.header-link {
+  font-family: 'General Sans', sans-serif;
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
+.header-link-btn {
+  font-family: 'General Sans', sans-serif;
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
