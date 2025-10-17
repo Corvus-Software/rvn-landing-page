@@ -11,7 +11,6 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Insights Cards -->
         <div class="space-y-6">
           <div
               v-for="(insight, index) in aiInsights"
@@ -53,7 +52,6 @@
               <h4 class="text-lg font-satoshi font-bold text-white mb-3">Detailed Analysis</h4>
               <p class="text-sm text-white/80 font-general-sans mb-4">{{ currentInsight.detailedAnalysis }}</p>
 
-              <!-- Progress Metrics -->
               <div class="grid grid-cols-2 gap-4">
                 <div class="text-center">
                   <div class="text-xl font-satoshi font-bold text-blue-400">{{ currentInsight.currentValue }}</div>
@@ -66,7 +64,6 @@
               </div>
             </div>
 
-            <!-- Action Steps -->
             <div class="bg-zinc-700 rounded-2xl p-4 mb-6">
               <h4 class="text-lg font-satoshi font-bold text-white mb-3">Action Steps</h4>
               <div class="space-y-2">
@@ -81,7 +78,6 @@
               </div>
             </div>
 
-            <!-- Apply Insight Button -->
             <button
                 @click="applyInsight(currentInsight)"
                 class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-general-sans font-medium py-3 px-6 rounded-xl transition-all duration-200"
@@ -110,14 +106,11 @@ const props = defineProps({
   }
 })
 
-// Reactive state
 const activeInsight = ref(0)
 
-// Visibility refs
 const aiInsightsSection = ref(null)
 const aiInsightsVisible = ref(false)
 
-// Data
 const aiInsights = ref([
   {
     type: 'improvement',
@@ -185,10 +178,8 @@ const aiInsights = ref([
   }
 ])
 
-// Computed
 const currentInsight = computed(() => aiInsights.value[activeInsight.value])
 
-// Methods
 const setActiveInsight = (index) => {
   activeInsight.value = index
 }
@@ -207,10 +198,8 @@ const applyInsight = (insight) => {
   emit('insight-applied', insight)
 }
 
-// Emits
 const emit = defineEmits(['insight-applied'])
 
-// Intersection Observer
 let observer = null
 
 const createObserver = () => {

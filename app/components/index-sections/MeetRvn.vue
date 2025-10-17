@@ -1,4 +1,3 @@
-<!-- Meet RVN Section -->
 <template>
   <div class="w-full py-24 bg-black">
     <div
@@ -6,52 +5,81 @@
       class="container mx-auto px-4 md:px-20 lg:px-32"
       :class="{ 'animate-fade-in-up': meetRvnVisible }"
     >
-      <!-- Section Header -->
       <div class="max-w-4xl">
-        <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-4">Meet RVN</h2>
-        <p class="text-xl text-white/90 font-general-sans max-w-2xl mb-16">The future of motorcycle data analysis in your pocket</p>
+        <h2
+          class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-4"
+        >
+          Meet RVN
+        </h2>
+        <p class="text-xl text-white/90 font-general-sans max-w-2xl mb-16">
+          The future of motorcycle data analysis in your pocket
+        </p>
       </div>
 
-      <!-- Feature Boxes Container -->
       <div class="w-full">
-        <!-- Feature Boxes Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          <!-- Box 1: Device -->
           <div class="space-y-6">
-            <div class="bg-zinc-900 rounded-3xl overflow-hidden group transition-transform duration-300 hover:-translate-y-2 aspect-[5/7]">
-              <div class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20">
+            <div
+              class="bg-zinc-900 rounded-3xl overflow-hidden group transition-transform duration-300 hover:-translate-y-2 aspect-[5/7]"
+            >
+              <div
+                class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20"
+              >
                 <span class="text-lg font-general-sans">Device Image</span>
               </div>
             </div>
             <div>
-              <h3 class="text-2xl font-satoshi font-bold text-white mb-2">Place Anywhere</h3>
-              <p class="text-white/70 font-general-sans">Compact, and small enough to be placed anywhere, in any orientation</p>
+              <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
+                Place Anywhere
+              </h3>
+              <p class="text-white/70 font-general-sans">
+                Compact, and small enough to be placed anywhere, in any
+                orientation
+              </p>
             </div>
           </div>
 
-          <!-- Box 2: Mobile App -->
           <div class="space-y-6">
-            <div class="bg-zinc-900 rounded-3xl overflow-hidden group transition-transform duration-300 hover:-translate-y-2 aspect-[5/7]">
-              <div class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20">
+            <div
+              class="bg-zinc-900 rounded-3xl overflow-hidden group transition-transform duration-300 hover:-translate-y-2 aspect-[5/7]"
+            >
+              <div
+                class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20"
+              >
                 <span class="text-lg font-general-sans">App Interface</span>
               </div>
             </div>
             <div>
-              <h3 class="text-2xl font-satoshi font-bold text-white mb-2">Mobile App</h3>
-              <p class="text-white/70 font-general-sans">Real-time tracking, insights, and feedback placed in a beautifully designed interface</p>
+              <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
+                Mobile App
+              </h3>
+              <p class="text-white/70 font-general-sans">
+                Real-time tracking, insights, and feedback placed in a
+                beautifully designed interface
+              </p>
             </div>
           </div>
 
-          <!-- Box 3: Analytics -->
           <div class="space-y-6">
-            <div class="bg-zinc-900 rounded-3xl overflow-hidden group transition-transform duration-300 hover:-translate-y-2 aspect-[5/7]">
-              <div class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20">
-                <span class="text-lg font-general-sans">Analytics Dashboard</span>
+            <div
+              class="bg-zinc-900 rounded-3xl overflow-hidden group transition-transform duration-300 hover:-translate-y-2 aspect-[5/7]"
+            >
+              <div
+                class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20"
+              >
+                <span class="text-lg font-general-sans"
+                  >Analytics Dashboard</span
+                >
               </div>
             </div>
             <div>
-              <h3 class="text-2xl font-satoshi font-bold text-white mb-2">Throttle AI Analysis</h3>
-              <p class="text-white/70 font-general-sans">Advanced insights and personalized recommendations for improvement powered by our Throttle AI</p>
+              <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
+                Throttle AI Analysis
+              </h3>
+              <p class="text-white/70 font-general-sans">
+                Advanced insights and personalized recommendations for
+                improvement powered by our Throttle AI
+              </p>
             </div>
           </div>
         </div>
@@ -61,40 +89,39 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from "vue";
 
-const meetRvnSection = ref(null)
-const meetRvnVisible = ref(false)
+const meetRvnSection = ref(null);
+const meetRvnVisible = ref(false);
 
-// Intersection Observer for lazy loading
-let observer = null
+let observer = null;
 
 const createObserver = () => {
   const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  }
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
 
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting && entry.target === meetRvnSection.value) {
-        meetRvnVisible.value = true
+        meetRvnVisible.value = true;
       }
-    })
-  }, options)
-}
+    });
+  }, options);
+};
 
 onMounted(() => {
-  createObserver()
-  if (meetRvnSection.value) observer.observe(meetRvnSection.value)
-})
+  createObserver();
+  if (meetRvnSection.value) observer.observe(meetRvnSection.value);
+});
 
 onUnmounted(() => {
   if (observer) {
-    observer.disconnect()
+    observer.disconnect();
   }
-})
+});
 </script>
 
 <style scoped>

@@ -1,27 +1,20 @@
-<!-- App Showcase Section -->
 <template>
   <div class="w-full py-24 bg-white relative overflow-hidden">
-    <!-- Track-like Wave Lines Background -->
     <div class="absolute inset-0 opacity-40">
       <svg width="1400" height="800" viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-full right-0 absolute z-0 scale-125">
-        <!-- Racing track curves -->
         <path d="M400 150 Q600 100 800 150 Q1000 200 1200 150 Q1300 120 1400 150" stroke="#2563EB" stroke-opacity="0.4" stroke-width="4" stroke-miterlimit="10" fill="none"/>
         <path d="M350 180 Q550 130 750 180 Q950 230 1150 180 Q1250 150 1350 180" stroke="#3B82F6" stroke-opacity="0.35" stroke-width="4" stroke-miterlimit="10" fill="none"/>
         <path d="M300 210 Q500 160 700 210 Q900 260 1100 210 Q1200 180 1300 210" stroke="#60A5FA" stroke-opacity="0.3" stroke-width="4" stroke-miterlimit="10" fill="none"/>
 
-        <!-- Curved track sections -->
         <path d="M200 300 Q400 250 600 300 Q800 350 1000 300 Q1200 250 1400 300" stroke="#93C5FD" stroke-opacity="0.25" stroke-width="4" stroke-miterlimit="10" fill="none"/>
         <path d="M150 350 Q350 300 550 350 Q750 400 950 350 Q1150 300 1350 350" stroke="#BFDBFE" stroke-opacity="0.2" stroke-width="4" stroke-miterlimit="10" fill="none"/>
 
-        <!-- S-curves like motorcycle tracks -->
         <path d="M100 450 Q300 400 500 450 Q700 500 900 450 Q1100 400 1300 450" stroke="#DBEAFE" stroke-opacity="0.15" stroke-width="4" stroke-miterlimit="10" fill="none"/>
         <path d="M250 520 Q450 470 650 520 Q850 570 1050 520 Q1250 470 1400 520" stroke="#EFF6FF" stroke-opacity="0.1" stroke-width="4" stroke-miterlimit="10" fill="none"/>
 
-        <!-- Lower track curves -->
         <path d="M50 600 Q250 550 450 600 Q650 650 850 600 Q1050 550 1250 600" stroke="#2563EB" stroke-opacity="0.2" stroke-width="4" stroke-miterlimit="10" fill="none"/>
         <path d="M150 650 Q350 600 550 650 Q750 700 950 650 Q1150 600 1350 650" stroke="#3B82F6" stroke-opacity="0.15" stroke-width="4" stroke-miterlimit="10" fill="none"/>
 
-        <!-- Tight corner curves -->
         <path d="M300 750 Q500 700 700 750 Q900 800 1100 750 Q1300 700 1400 750" stroke="#60A5FA" stroke-opacity="0.1" stroke-width="4" stroke-miterlimit="10" fill="none"/>
       </svg>
     </div>
@@ -32,9 +25,7 @@
         :class="{ 'animate-fade-in-up': appShowcaseVisible }"
     >
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
-        <!-- Left Side - Content (1/3) -->
         <div class="lg:col-span-1 relative h-[600px]">
-          <!-- Dynamic Title and Description -->
           <div class="space-y-6">
             <h2
                 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 leading-tight transition-all duration-500"
@@ -50,9 +41,7 @@
             </p>
           </div>
 
-          <!-- Fixed Position Controls -->
           <div class="absolute bottom-8 left-0">
-            <!-- Small Horizontal Circles -->
             <div class="flex space-x-4 py-6 justify-start">
               <div
                   v-for="(feature, index) in features"
@@ -70,7 +59,6 @@
               </div>
             </div>
 
-            <!-- Navigation Arrows -->
             <div class="flex space-x-4">
               <button
                   @click="previousSlide"
@@ -96,9 +84,7 @@
           </div>
         </div>
 
-        <!-- Right Side - App Screenshots Carousel (2/3) -->
         <div class="lg:col-span-2 relative h-[600px] flex items-center justify-center overflow-hidden">
-          <!-- Screenshots Container -->
           <div class="relative w-full h-full flex items-center justify-center">
             <div
                 v-for="(feature, index) in features"
@@ -129,12 +115,10 @@
         :class="{ 'animate-fade-in-up': raiVisible }"
     >
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Left: Chat Interface Mockup -->
         <div class="relative">
           <div class="bg-zinc-900 rounded-3xl h-[600px] p-8 relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 to-purple-600/10"></div>
 
-            <!-- Chat Header -->
             <div class="relative z-10 border-b border-zinc-700 pb-4 mb-6">
               <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-purple-600 rounded-full flex items-center justify-center">
@@ -152,16 +136,13 @@
               </div>
             </div>
 
-            <!-- Chat Messages -->
             <div class="relative z-10 space-y-4 h-[400px] overflow-hidden">
-              <!-- User Message -->
               <div class="flex justify-end">
                 <div class="bg-red-600 text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-xs">
                   <p class="text-sm font-general-sans">How can I improve my cornering technique on the track?</p>
                 </div>
               </div>
 
-              <!-- RAi Response -->
               <div class="flex justify-start">
                 <div class="bg-zinc-800 text-white rounded-2xl rounded-tl-sm px-4 py-3 max-w-md">
                   <p class="text-sm font-general-sans mb-2">Based on your last 15 track sessions, I've analyzed your data:</p>
@@ -174,14 +155,12 @@
                 </div>
               </div>
 
-              <!-- User Follow-up -->
               <div class="flex justify-end">
                 <div class="bg-red-600 text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-xs">
                   <p class="text-sm font-general-sans">Show me my progress over the last month</p>
                 </div>
               </div>
 
-              <!-- RAi Data Response -->
               <div class="flex justify-start">
                 <div class="bg-zinc-800 text-white rounded-2xl rounded-tl-sm px-4 py-3 max-w-md">
                   <p class="text-sm font-general-sans mb-3">Here's your monthly progress:</p>
@@ -201,7 +180,6 @@
               </div>
             </div>
 
-            <!-- Chat Input -->
             <div class="relative z-10 border-t border-zinc-700 pt-4">
               <div class="flex items-center space-x-3">
                 <div class="flex-1 bg-zinc-800 rounded-full px-4 py-2">
@@ -217,7 +195,6 @@
           </div>
         </div>
 
-        <!-- Right: Content -->
         <div>
           <div class="text-red-400 font-general-sans text-sm uppercase tracking-wide mb-4">Intelligent Assistant</div>
           <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-black mb-6">Meet RAi</h2>
@@ -274,7 +251,6 @@
       </div>
     </div>
   </div>
-  <!-- Features Banner Section -->
   <div class="w-full py-8 bg-blue-600">
     <div
         ref="featuresSection"
@@ -282,7 +258,6 @@
         :class="{ 'animate-fade-in-up': featuresVisible }"
     >
       <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
-        <!-- Feature 1 -->
         <div class="flex items-center space-x-3 text-white">
           <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
@@ -290,10 +265,8 @@
           <span class="text-lg font-general-sans font-medium">Free worldwide shipping</span>
         </div>
 
-        <!-- Divider -->
         <div class="hidden md:block w-px h-8 bg-white/30"></div>
 
-        <!-- Feature 2 -->
         <div class="flex items-center space-x-3 text-white">
           <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clip-rule="evenodd"/>
@@ -301,10 +274,8 @@
           <span class="text-lg font-general-sans font-medium">Lifetime warranty</span>
         </div>
 
-        <!-- Divider -->
         <div class="hidden md:block w-px h-8 bg-white/30"></div>
 
-        <!-- Feature 3 -->
         <div class="flex items-center space-x-3 text-white">
           <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
@@ -353,13 +324,10 @@ const nextSlideIndex = computed(() => {
 
 const getSlideClasses = (index) => {
   if (index === activeSlide.value) {
-    // Current slide - center, in front of text
     return 'opacity-100 scale-100 z-30 translate-x-0'
   } else if (index < activeSlide.value) {
-    // Previous slides - slide left, behind text, fade faster
     return 'opacity-0 scale-90 z-5 -translate-x-full'
   } else {
-    // Next slides - slide right, behind text, fade faster
     return 'opacity-0 scale-90 z-5 translate-x-full'
   }
 }
@@ -381,7 +349,6 @@ const previousSlide = () => {
   }
 }
 
-// Intersection Observer for lazy loading
 let observer = null
 
 const createObserver = () => {
@@ -433,7 +400,6 @@ onUnmounted(() => {
   transform: translateY(30px);
 }
 
-/* Smooth transitions for all carousel elements */
 .carousel-enter-active, .carousel-leave-active {
   transition: all 0.7s ease;
 }

@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen bg-black">
-    <!-- Hero Section -->
     <div class="w-full h-screen relative overflow-hidden bg-gradient-to-br from-red-950 via-red-900 to-black">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(220,38,38,0.15),transparent_50%)]"></div>
 
@@ -23,7 +22,6 @@
       </div>
     </div>
 
-    <!-- Performance Metrics Section - BLACK -->
     <div class="w-full py-24 bg-black">
       <div
           ref="metricsSection"
@@ -57,7 +55,6 @@
       </div>
     </div>
 
-    <!-- Data Visualization Section - BLACK -->
     <div class="w-full py-24 bg-black">
       <div
           ref="dataSection"
@@ -65,7 +62,6 @@
           :class="{ 'animate-fade-in-up': dataVisible }"
       >
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <!-- Main Chart Area -->
           <div class="lg:col-span-2">
             <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-8">Data Insights</h2>
             <p class="text-xl text-white/90 font-general-sans mb-12 max-w-xl">
@@ -98,7 +94,6 @@
             </div>
           </div>
 
-          <!-- Data Points -->
           <div class="space-y-6">
             <div
                 v-for="(dataPoint, index) in dataPoints"
@@ -118,7 +113,6 @@
       </div>
     </div>
 
-    <!-- Content Block 1 - Left Image, Right Text - BLACK -->
     <div class="w-full py-24 bg-black">
       <div
           ref="contentBlock1"
@@ -126,7 +120,6 @@
           :class="{ 'animate-fade-in-up': contentBlock1Visible }"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Left: Image/Video Placeholder -->
           <div class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden group">
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
             <div class="relative z-10 h-full flex items-center justify-center text-white">
@@ -141,7 +134,6 @@
             </div>
           </div>
 
-          <!-- Right: Text Content -->
           <div>
             <div class="text-red-400 font-general-sans text-sm uppercase tracking-wide mb-4">Advanced Technology</div>
             <h3 class="text-4xl md:text-5xl font-satoshi font-[900] text-white mb-6">Precision in Every Turn</h3>
@@ -165,9 +157,7 @@
       </div>
     </div>
 
-    <!-- Interactive Features Grid - WHITE -->
     <div class="w-full py-24 bg-white relative overflow-hidden">
-      <!-- Background Waves -->
       <div class="absolute inset-0 opacity-20">
         <svg width="1400" height="800" viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg"
              class="h-full w-full absolute z-0">
@@ -192,7 +182,6 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Feature Cards -->
           <div class="space-y-6">
             <div
                 v-for="(feature, index) in smartFeatures"
@@ -216,7 +205,6 @@
             </div>
           </div>
 
-          <!-- Interactive Content Block -->
           <div class="bg-zinc-900 rounded-3xl h-[500px] flex items-center justify-center relative overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-purple-600/20"></div>
             <div class="relative z-10 text-center text-white p-8">
@@ -231,7 +219,6 @@
       </div>
     </div>
 
-    <!-- Content Block 2 - Right Image, Left Text - WHITE -->
     <div class="w-full py-24 bg-white">
       <div
           ref="contentBlock2"
@@ -239,7 +226,6 @@
           :class="{ 'animate-fade-in-up': contentBlock2Visible }"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Left: Text Content -->
           <div>
             <div class="text-red-600 font-general-sans text-sm uppercase tracking-wide mb-4">Cloud Connectivity</div>
             <h3 class="text-4xl md:text-5xl font-satoshi font-[900] text-gray-900 mb-6">Seamless Data Sync</h3>
@@ -259,7 +245,6 @@
             </div>
           </div>
 
-          <!-- Right: Image/Video Placeholder -->
           <div class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden group">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
             <div class="relative z-10 h-full flex items-center justify-center text-white">
@@ -278,7 +263,6 @@
       </div>
     </div>
 
-    <!-- RAi Chatbot Section - BLACK -->
     <div class="w-full py-24 bg-white relative overflow-hidden">
 
       <div
@@ -287,12 +271,10 @@
           :class="{ 'animate-fade-in-up': raiVisible }"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Left: Chat Interface Mockup -->
           <div class="relative">
             <div class="bg-zinc-900 rounded-3xl h-[600px] p-8 relative overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 to-purple-600/10"></div>
 
-              <!-- Chat Header -->
               <div class="relative z-10 border-b border-zinc-700 pb-4 mb-6">
                 <div class="flex items-center space-x-3">
                   <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-purple-600 rounded-full flex items-center justify-center">
@@ -310,16 +292,13 @@
                 </div>
               </div>
 
-              <!-- Chat Messages -->
               <div class="relative z-10 space-y-4 h-[400px] overflow-hidden">
-                <!-- User Message -->
                 <div class="flex justify-end">
                   <div class="bg-red-600 text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-xs">
                     <p class="text-sm font-general-sans">How can I improve my cornering technique on the track?</p>
                   </div>
                 </div>
 
-                <!-- RAi Response -->
                 <div class="flex justify-start">
                   <div class="bg-zinc-800 text-white rounded-2xl rounded-tl-sm px-4 py-3 max-w-md">
                     <p class="text-sm font-general-sans mb-2">Based on your last 15 track sessions, I've analyzed your data:</p>
@@ -332,14 +311,12 @@
                   </div>
                 </div>
 
-                <!-- User Follow-up -->
                 <div class="flex justify-end">
                   <div class="bg-red-600 text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-xs">
                     <p class="text-sm font-general-sans">Show me my progress over the last month</p>
                   </div>
                 </div>
 
-                <!-- RAi Data Response -->
                 <div class="flex justify-start">
                   <div class="bg-zinc-800 text-white rounded-2xl rounded-tl-sm px-4 py-3 max-w-md">
                     <p class="text-sm font-general-sans mb-3">Here's your monthly progress:</p>
@@ -359,7 +336,6 @@
                 </div>
               </div>
 
-              <!-- Chat Input -->
               <div class="relative z-10 border-t border-zinc-700 pt-4">
                 <div class="flex items-center space-x-3">
                   <div class="flex-1 bg-zinc-800 rounded-full px-4 py-2">
@@ -375,7 +351,6 @@
             </div>
           </div>
 
-          <!-- Right: Content -->
           <div>
             <div class="text-red-400 font-general-sans text-sm uppercase tracking-wide mb-4">Intelligent Assistant</div>
             <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-black mb-6">Meet RAi</h2>
@@ -433,7 +408,6 @@
       </div>
     </div>
 
-    <!-- Safety Features Carousel - WHITE -->
     <div class="w-full py-24 bg-white">
       <div
           ref="safetySection"
@@ -447,7 +421,6 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
-          <!-- Safety Controls -->
           <div class="space-y-8">
             <div
                 v-for="(safety, index) in safetyFeatures"
@@ -485,7 +458,6 @@
             </div>
           </div>
 
-          <!-- Safety Visualization -->
           <div class="lg:col-span-2">
             <div class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden">
               <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
@@ -511,7 +483,6 @@
       </div>
     </div>
 
-    <!-- Content Block 3 - Left Image, Right Text - WHITE -->
     <div class="w-full py-24 bg-white">
       <div
           ref="contentBlock3"
@@ -519,7 +490,6 @@
           :class="{ 'animate-fade-in-up': contentBlock3Visible }"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Left: Image/Video Placeholder -->
           <div class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden group">
             <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20"></div>
             <div class="relative z-10 h-full flex items-center justify-center text-white">
@@ -536,7 +506,6 @@
             </div>
           </div>
 
-          <!-- Right: Text Content -->
           <div>
             <div class="text-red-600 font-general-sans text-sm uppercase tracking-wide mb-4">Easy Installation</div>
             <h3 class="text-4xl md:text-5xl font-satoshi font-[900] text-gray-900 mb-6">Ready in Minutes</h3>
@@ -559,7 +528,6 @@
       </div>
     </div>
 
-    <!-- Hero Banner 3 - BLACK -->
     <div class="w-full py-32 bg-gradient-to-r from-zinc-900 via-black to-zinc-900 relative overflow-hidden">
       <div class="absolute inset-0">
         <div class="absolute inset-0 bg-gradient-to-r from-red-600/10 via-transparent to-red-600/10"></div>
@@ -587,7 +555,6 @@
       </div>
     </div>
 
-    <!-- Hardware Specs - BLACK -->
     <div class="w-full py-24 bg-black">
       <div
           ref="hardwareSection"
@@ -595,7 +562,6 @@
           :class="{ 'animate-fade-in-up': hardwareVisible }"
       >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <!-- Hardware Visual -->
           <div class="space-y-8">
             <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white">Built to Last</h2>
             <p class="text-xl text-white/90 font-general-sans">
@@ -615,7 +581,6 @@
             </div>
           </div>
 
-          <!-- Device Mockup -->
           <div class="relative">
             <div
                 class="bg-zinc-900 rounded-3xl h-[600px] shadow-2xl relative overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-500">
@@ -638,7 +603,6 @@
       </div>
     </div>
 
-    <!-- Technical Specifications - BLACK -->
     <div class="w-full py-24 bg-black">
       <div
           ref="techSpecsSection"
@@ -672,7 +636,6 @@
       </div>
     </div>
 
-    <!-- FAQ Section - WHITE -->
     <div class="w-full py-24 bg-white">
       <div
           ref="faqSection"
@@ -719,7 +682,6 @@
       </div>
     </div>
 
-    <!-- Final CTA Section - BLACK -->
     <div class="w-full py-24 bg-gradient-to-br from-red-600 to-purple-700">
       <div
           ref="ctaSection"
@@ -755,12 +717,10 @@
 <script setup>
 import {ref, onMounted, onUnmounted} from 'vue'
 
-// Reactive data
 const activeMetric = ref(0)
 const activeFeature = ref(0)
 const activeSafety = ref(0)
 
-// Visibility refs
 const metricsSection = ref(null)
 const featuresGridSection = ref(null)
 const dataSection = ref(null)
@@ -789,7 +749,6 @@ const compatibilityVisible = ref(false)
 const faqVisible = ref(false)
 const pricingVisible = ref(false)
 
-// Data
 const performanceMetrics = ref([
   {
     title: 'GPS Precision',
@@ -914,7 +873,6 @@ const faqs = ref([
   }
 ])
 
-// Methods
 const setActiveMetric = (index) => {
   activeMetric.value = index
 }
@@ -932,16 +890,13 @@ const toggleFaq = (index) => {
 }
 
 const getMetricIcon = (index) => {
-  // Return 'svg' for now - you can replace with actual icon components
   return 'svg'
 }
 
 const getFeatureIcon = (index) => {
-  // Return 'svg' for now - you can replace with actual icon components
   return 'svg'
 }
 
-// Intersection Observer
 let observer = null
 
 const createObserver = () => {
@@ -975,7 +930,6 @@ const createObserver = () => {
 onMounted(() => {
   createObserver()
 
-  // Observe all sections
   const sections = [
     metricsSection,
     featuresGridSection,

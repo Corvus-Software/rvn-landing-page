@@ -1,0 +1,50 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Nuxt build output
+.nuxt/
+dist/
+.cache/
+output/
+*.local
+
+# Tailwind
+# (Tailwind itself doesn't generate files, but PostCSS and build caches might)
+.postcss-cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Lock files (optional — comment out if you want to keep them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp

@@ -1,6 +1,5 @@
 <template>
     <div class="min-h-screen bg-black">
-        <!-- Hero Section -->
         <div class="w-full h-screen relative overflow-hidden bg-gradient-to-br from-red-950 via-red-900 to-black">
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
 
@@ -22,11 +21,9 @@
             </div>
         </div>
 
-        <!-- Mission Statement - BLACK -->
         <div class="w-full py-24 bg-black">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <!-- Left - Text Content -->
                     <div>
                         <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-8 leading-tight">Our Mission</h2>
                         <p class="text-xl text-white/90 font-general-sans mb-8">
@@ -48,7 +45,6 @@
                         </div>
                     </div>
 
-                    <!-- Right - Visual -->
                     <div class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
                         <div class="relative z-10 h-full flex items-center justify-center text-white p-8">
@@ -67,27 +63,21 @@
             </div>
         </div>
 
-        <!-- Founding Story - BLACK -->
         <div class="w-full py-24 bg-black">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-16">How It Started</h2>
 
-                <!-- Timeline Layout -->
                 <div class="relative">
-                    <!-- Timeline Line -->
                     <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-zinc-700"></div>
 
-                    <!-- Story Points -->
                     <div class="space-y-12">
                         <div
                                 v-for="(story, index) in foundingStory"
                                 :key="index"
                                 class="relative flex items-start"
                         >
-                            <!-- Timeline Dot -->
                             <div class="absolute left-6 w-4 h-4 bg-red-600 rounded-full border-4 border-black z-10"></div>
 
-                            <!-- Story Card -->
                             <div class="ml-20 bg-zinc-900 rounded-2xl p-8 w-full">
                                 <div class="flex items-center space-x-4 mb-4">
                                     <h3 class="text-2xl font-satoshi font-bold text-white">{{ story.year }}</h3>
@@ -102,14 +92,11 @@
             </div>
         </div>
 
-        <!-- Team Grid - BLACK -->
         <div class="w-full py-24 bg-black">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-16">Meet the Team</h2>
 
-                <!-- Staggered Grid Layout -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Featured Founder -->
                     <div class="md:col-span-2 bg-zinc-900 rounded-3xl p-8 relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 to-orange-600/10"></div>
                         <div class="relative z-10 flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-8">
@@ -127,7 +114,6 @@
                         </div>
                     </div>
 
-                    <!-- Team Members -->
                     <div
                             v-for="(member, index) in teamMembers"
                             :key="index"
@@ -145,14 +131,11 @@
             </div>
         </div>
 
-        <!-- Values Showcase - WHITE -->
         <div class="w-full py-24 bg-white">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 mb-16">What Drives Us</h2>
 
-                <!-- Values Cards - Mixed Layout -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Large Featured Value -->
                     <div class="lg:col-span-2 bg-zinc-900 rounded-3xl p-12 text-white relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
                         <div class="relative z-10">
@@ -169,7 +152,6 @@
                         </div>
                     </div>
 
-                    <!-- Smaller Values -->
                     <div class="space-y-8">
                         <div
                                 v-for="(value, index) in coreValues"
@@ -189,11 +171,9 @@
             </div>
         </div>
 
-        <!-- Community Impact - WHITE -->
         <div class="w-full py-24 bg-white">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <!-- Left - Stats Visual -->
                     <div class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20"></div>
                         <div class="relative z-10 h-full flex items-center justify-center text-white p-8">
@@ -221,7 +201,6 @@
                         </div>
                     </div>
 
-                    <!-- Right - Text Content -->
                     <div>
                         <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 mb-8 leading-tight">Riding Together</h2>
                         <p class="text-xl text-gray-700 font-general-sans mb-8">
@@ -242,7 +221,6 @@
             </div>
         </div>
 
-        <!-- Awards & Recognition - WHITE -->
         <div class="w-full py-24 bg-white">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 mb-16">Recognition</h2>
@@ -267,11 +245,9 @@
             </div>
         </div>
 
-        <!-- Partnership & Investors - WHITE -->
         <div class="w-full py-24 bg-white">
             <div class="container mx-auto px-4 md:px-20 lg:px-32">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <!-- Left - Text Content -->
                     <div>
                         <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 mb-8 leading-tight">Backed by the Best</h2>
                         <p class="text-xl text-gray-700 font-general-sans mb-8">
@@ -293,7 +269,6 @@
                         </div>
                     </div>
 
-                    <!-- Right - Partner Logos Mockup -->
                     <div class="bg-zinc-900 rounded-3xl h-[400px] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
                         <div class="relative z-10 h-full flex items-center justify-center text-white p-8">
@@ -312,7 +287,6 @@
             </div>
         </div>
 
-        <!-- Join Us Section - Gradient Background -->
         <div class="w-full py-24 bg-gradient-to-br from-red-600 to-orange-600">
             <div class="container mx-auto px-4 md:px-20 lg:px-32 text-center">
                 <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-8">Join Our Mission</h2>
@@ -338,7 +312,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
-// Data
 const foundingStory = ref([
     {
         year: '2019',
@@ -430,7 +403,6 @@ const awards = ref([
     { title: 'Best Mobile App', organization: 'Webby Awards', year: '2022' }
 ])
 
-// Methods for intersection observer animations
 let observer = null
 
 const createObserver = () => {
