@@ -11,7 +11,7 @@
               <br/>
               THAT FUEL
               <br/>
-              PERFORMANCE
+              YOUR RIDE
             </h1>
             <p class="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-general-sans">
               Discover the cutting-edge technology that makes RVN the ultimate riding companion for every motorcycle
@@ -29,7 +29,7 @@
           :class="{ 'animate-fade-in-up': metricsVisible }"
       >
         <div class="text-left mb-16">
-          <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-4">Performance Metrics</h2>
+          <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-4">Modules to Track Performance</h2>
           <p class="text-xl text-white/90 font-general-sans max-w-2xl">Track every aspect of your ride with precision
             data collection</p>
         </div>

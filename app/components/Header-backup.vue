@@ -31,17 +31,6 @@
               class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
             ></span>
           </NuxtLink>
-
-          <!-- Logout button -->
-          <button
-            @click="handleLogout"
-            class="header-link relative group text-white hover:text-red-400 transition-colors"
-          >
-            Logout
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-400 group-hover:w-full transition-all duration-300"
-            ></span>
-          </button>
         </div>
 
         <!-- Desktop CTA -->
@@ -108,14 +97,6 @@
             {{ item.label }}
           </NuxtLink>
 
-          <!-- Logout button for mobile -->
-          <button
-            @click="handleLogout"
-            class="header-link block px-4 py-3 text-white hover:text-red-400 transition-colors text-left"
-          >
-            Logout
-          </button>
-
           <NuxtLink to="/waitlist" class="px-4">
             <button
               @click="mobileMenuOpen = false"
@@ -144,23 +125,6 @@ const navItems = [
   { label: "Analysis", to: "/analysis" },
   { label: "About Us", to: "/about-us" },
 ];
-
-// Logout functionality
-const handleLogout = async () => {
-  try {
-    await $fetch('/api/auth/logout', {
-      method: 'POST'
-    });
-
-    // Close mobile menu if open
-    mobileMenuOpen.value = false;
-
-    // Redirect to login page
-    await navigateTo('/login');
-  } catch (error) {
-    console.error('Logout failed:', error);
-  }
-};
 
 onMounted(() => {
   const handleScroll = () => {
