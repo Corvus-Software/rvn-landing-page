@@ -11,7 +11,7 @@ dist/
 .cache/
 output/
 *.local
-
+.idea
 # Tailwind
 # (Tailwind itself doesn't generate files, but PostCSS and build caches might)
 .postcss-cache/
@@ -48,3 +48,4 @@ Thumbs.db
 *.swo
 *.bak
 *.tmp
+.output
