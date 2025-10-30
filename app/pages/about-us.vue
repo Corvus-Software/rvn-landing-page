@@ -87,7 +87,7 @@
                                     <div class="w-2 h-2 bg-red-500 rounded-full"></div>
                                     <h4 class="text-xl font-satoshi font-bold text-red-400">{{ story.milestone }}</h4>
                                 </div>
-                                <p class="text-white/80 font-general-sans">{{ story.description }}</p>
+                                <p class="text-white/80 font-general-sans" v-html="formatBrandText(story.description)"></p>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                     <div>
                         <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 mb-8 leading-tight">Riding Together</h2>
                         <p class="text-xl text-gray-700 font-general-sans mb-8">
-                            What started as a small team of passionate riders has grown into a global community of motorcycle enthusiasts. From track day warriors to weekend cruisers, RVN brings riders together through shared data and experiences.
+                            What started as a small team of passionate riders has grown into a global community of motorcycle enthusiasts. From track day warriors to weekend cruisers, <span class="font-chillax font-bold">RVN</span> brings riders together through shared data and experiences.
                         </p>
                         <div class="space-y-6">
                             <div class="p-4 bg-gray-100 rounded-xl">
@@ -255,6 +255,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { formatBrandText } from '~/utils/brandText'
 
 const foundingStory = ref([
     {

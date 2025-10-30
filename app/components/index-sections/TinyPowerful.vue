@@ -13,9 +13,8 @@
             Tiny, yet powerful
           </h2>
           <p class="text-xl text-gray-700 font-general-sans mb-12 max-w-xl">
-            Despite its compact size, RVN packs cutting-edge technology that
-            delivers professional-grade data analysis and insights for every
-            ride.
+            Despite its compact size, <span class="font-chillax font-bold">RVN</span> packs cutting-edge technology that delivers
+            professional-grade data analysis and insights for every ride.
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

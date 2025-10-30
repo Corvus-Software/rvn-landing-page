@@ -24,8 +24,8 @@
               YOUR RIDE
             </h1>
             <p class="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-general-sans">
-              Discover the cutting-edge technology that makes RVN the ultimate riding companion for every motorcycle
-              enthusiast.
+              Discover the cutting-edge technology that makes <span class="font-chillax font-bold">RVN</span> the ultimate riding
+              companion for every motorcycle enthusiast.
             </p>
           </div>
         </div>
@@ -75,8 +75,9 @@
           <div class="lg:col-span-2">
             <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-8">Data Insights</h2>
             <p class="text-xl text-white/90 font-general-sans mb-12 max-w-xl">
-              Powered by our cutting edge Throttle AI, RVN transforms raw ride data into actionable insights. Analyze
-              your speed, lean angles, and GPS tracking with unparalleled accuracy to elevate your riding skills.
+              Powered by our cutting edge Throttle AI, <span class="font-chillax font-bold">RVN</span> transforms raw ride data into
+              actionable insights. Analyze your speed, lean angles, and GPS tracking with unparalleled accuracy to
+              elevate your riding skills.
             </p>
 
             <div class="bg-zinc-900 rounded-3xl h-[400px] p-8 relative overflow-hidden">
@@ -149,8 +150,8 @@
             <h3 class="text-4xl md:text-5xl font-satoshi font-[900] text-white mb-6">Precision in Every Turn</h3>
             <p class="text-xl text-white/80 font-general-sans mb-8">
               Our state-of-the-art 9 axis IMU sensors capture every nuance of your ride with military-grade precision.
-              From the subtlest lean angle adjustments to high-speed cornering dynamics, RVN records it all at 10Hz for
-              unparalleled accuracy.
+              From the subtlest lean angle adjustments to high-speed cornering dynamics, <span class="font-chillax font-bold">RVN</span>
+              records it all at 10Hz for unparalleled accuracy.
             </p>
             <div class="grid grid-cols-2 gap-6">
               <div>
@@ -209,7 +210,7 @@
                 </div>
                 <div>
                   <h3 class="text-xl font-satoshi font-bold text-gray-900 mb-2">{{ feature.title }}</h3>
-                  <p class="text-gray-600 font-general-sans">{{ feature.description }}</p>
+                  <p class="text-gray-600 font-general-sans" v-html="formatBrandText(feature.description)"></p>
                 </div>
               </div>
             </div>
@@ -219,7 +220,7 @@
             <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-purple-600/20"></div>
             <div class="relative z-10 text-center text-white p-8">
               <h4 class="text-2xl font-satoshi font-bold mb-4">{{ smartFeatures[activeFeature].title }}</h4>
-              <p class="text-white/80 font-general-sans mb-6">{{ smartFeatures[activeFeature].details }}</p>
+              <p class="text-white/80 font-general-sans mb-6" v-html="formatBrandText(smartFeatures[activeFeature].details)"></p>
               <div class="w-20 h-20 bg-red-600/30 rounded-full flex items-center justify-center mx-auto">
                 <component :is="getFeatureIcon(activeFeature)" class="w-10 h-10 text-red-400"/>
               </div>
@@ -603,7 +604,7 @@
                       <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                   </div>
-                  <h4 class="text-2xl font-satoshi font-bold mb-4">RVN Device</h4>
+                  <h4 class="text-2xl font-satoshi font-bold mb-4"><span class="font-chillax font-bold">RVN</span> Device</h4>
                   <p class="text-white/70 font-general-sans">Compact. Powerful. Reliable.</p>
                 </div>
               </div>
@@ -654,7 +655,7 @@
       >
         <div class="text-center mb-16">
           <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-gray-900 mb-4">Frequently Asked Questions</h2>
-          <p class="text-xl text-gray-700 font-general-sans max-w-2xl mx-auto">Everything you need to know about RVN</p>
+          <p class="text-xl text-gray-700 font-general-sans max-w-2xl mx-auto">Everything you need to know about <span class="font-chillax font-bold">RVN</span></p>
         </div>
 
         <div class="max-w-4xl mx-auto">
@@ -666,7 +667,7 @@
                 @click="toggleFaq(index)"
             >
               <div class="flex justify-between items-start">
-                <h3 class="text-xl font-satoshi font-bold text-gray-900 pr-4">{{ faq.question }}</h3>
+                <h3 class="text-xl font-satoshi font-bold text-gray-900 pr-4" v-html="formatBrandText(faq.question)"></h3>
                 <div class="flex-shrink-0">
                   <svg
                       class="w-6 h-6 text-gray-500 transition-transform duration-300"
@@ -684,7 +685,7 @@
                   v-if="faq.isOpen"
                   class="mt-4 pt-4 border-t border-gray-200"
               >
-                <p class="text-gray-600 font-general-sans">{{ faq.answer }}</p>
+                <p class="text-gray-600 font-general-sans" v-html="formatBrandText(faq.answer)"></p>
               </div>
             </div>
           </div>
@@ -700,12 +701,12 @@
       >
         <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-8">Ready to Ride Smarter?</h2>
         <p class="text-xl text-white/90 font-general-sans max-w-2xl mx-auto mb-12">
-          Join thousands of riders who have transformed their experience with RVN's advanced technology.
+          Join thousands of riders who have transformed their experience with <span class="font-chillax font-bold">RVN</span>'s advanced technology.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <button
               class="font-sans px-12 py-6 bg-white text-red-600 rounded-full hover:bg-gray-100 transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-3 group text-lg font-bold">
-            <span class="tracking-[1px] uppercase">Get RVN Now</span>
+            <span class="tracking-[1px] uppercase">Get <span class="font-chillax font-bold">RVN</span> Now</span>
             <svg xmlns="http://www.w3.org/2000/svg"
                  class="h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" viewBox="0 0 20 20"
                  fill="currentColor">
@@ -726,6 +727,7 @@
 
 <script setup>
 import {ref, onMounted, onUnmounted} from 'vue'
+import { formatBrandText } from '~/utils/brandText'
 
 const activeMetric = ref(0)
 const activeFeature = ref(0)

@@ -94,7 +94,7 @@
           <div class="space-y-6">
             <h3 class="text-xl font-satoshi font-bold mb-4">Contact</h3>
             <div class="text-gray-300 font-general-sans space-y-2">
-              <p>RVN Technologies Inc.</p>
+              <p><span class="font-chillax font-bold">RVN</span> Technologies Inc.</p>
               <p>1234 Innovation Drive</p>
               <p>San Francisco, CA 94102</p>
               <p>United States</p>
@@ -107,7 +107,7 @@
         >
           <div class="flex items-center space-x-3">
             <p class="text-gray-400 font-general-sans">
-              © 2025 RVN Technologies Inc. All rights reserved.
+              © 2025 <span class="font-chillax font-bold">RVN</span> Technologies Inc. All rights reserved.
             </p>
           </div>
 

@@ -9,7 +9,7 @@
         <h2
           class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-4"
         >
-          Introducing RVN
+          Introducing <span class="font-chillax font-bold">RVN</span>
         </h2>
         <p class="text-xl text-white/90 font-general-sans max-w-2xl mb-16">
           The future of motorcycle data analysis on your bike and in your pocket.
@@ -33,7 +33,7 @@
                 Attach Anywhere
               </h3>
               <p class="text-white/70 font-general-sans">
-                RVN is small and compact enough to be placed anywhere, in any
+                <span class="font-chillax font-bold">RVN</span> is small and compact enough to be placed anywhere, in any
                 orientation. Just attach it to your motorcycle and go.
               </p>
             </div>
@@ -46,15 +46,15 @@
               <div
                 class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20"
               >
-                <span class="text-lg font-general-sans">RVN Console Image</span>
+                <span class="text-lg font-general-sans"><span class="font-chillax font-bold">RVN</span> Console Image</span>
               </div>
             </div>
             <div>
               <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
-                RVN Console App
+                <span class="font-chillax font-bold">RVN</span> Console App
               </h3>
               <p class="text-white/70 font-general-sans">
-                RVN records then sends tracking, insights, and feedback placed in a
+                <span class="font-chillax font-bold">RVN</span> records then sends tracking, insights, and feedback placed in a
                 beautifully designed interface on your phone, and computer.
               </p>
             </div>

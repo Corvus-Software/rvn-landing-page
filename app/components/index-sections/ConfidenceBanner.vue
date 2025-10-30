@@ -19,9 +19,9 @@
           <p
             class="text-xl md:text-2xl text-white/90 font-general-sans max-w-xl"
           >
-            No matter your skill level, RVN is designed to help you get better session after session. 
+            No matter your skill level, <span class="font-chillax font-bold">RVN</span> is designed to help you get better session after session. 
             Our AI-powered insights and detailed analytics give you the tools you need to ride with confidence and improve your skills on every ride. 
-            Attach RVN to your motorcycle and it will learn your riding style, providing personalized feedback and recommendations to help you reach your full potential.
+            Attach <span class="font-chillax font-bold">RVN</span> to your motorcycle and it will learn your riding style, providing personalized feedback and recommendations to help you reach your full potential.
           </p>
         </div>
 

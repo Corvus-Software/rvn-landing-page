@@ -3,7 +3,7 @@
     <div class="max-w-md w-full space-y-8 p-8 bg-gray-800 rounded-lg shadow-xl">
       <div>
         <h2 class="text-center text-3xl font-bold text-white">
-          RVN Access
+          <span class="font-chillax font-bold">RVN</span> Access
         </h2>
         <p class="mt-2 text-center text-sm text-gray-400">
           Please enter the password to continue

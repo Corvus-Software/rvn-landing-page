@@ -13,7 +13,7 @@
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center group">
             <span
-              class="font-chillax text-4xl font-bold text-white group-hover:text-accent transition-colors"
+              class="font-chillax font-bold text-4xl font-bold text-white group-hover:text-accent transition-colors"
               >RVN</span
             >
           </NuxtLink>

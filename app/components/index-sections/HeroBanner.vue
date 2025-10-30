@@ -24,8 +24,8 @@
               TRACK
             </h1>
             <p class="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-general-sans">
-              Discover the cutting-edge technology that makes RVN the ultimate riding companion for every motorcycle
-              enthusiast.
+              Discover the cutting-edge technology that makes <span class="font-chillax font-bold">RVN</span> the ultimate riding
+              companion for every motorcycle enthusiast.
             </p>
           </div>
         </div>
@@ -45,8 +45,8 @@
           <p
             class="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-general-sans"
           >
-            RVN is your AI-powered telemetry unit that provides insights and
-            post-ride analysis to help you become a better rider.
+            <span class="font-chillax font-bold">RVN</span> is your AI-powered telemetry unit that provides insights and post-ride
+            analysis to help you become a better rider.
           </p>
           <button
             ref="heroSection"

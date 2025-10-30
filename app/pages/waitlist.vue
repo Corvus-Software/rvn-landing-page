@@ -16,7 +16,7 @@
             </h2>
 
             <p class="text-xl text-white/90 mb-8 font-general-sans">
-              Transform your riding with military-grade analytics. RVN captures
+              Transform your riding with military-grade analytics. <span class="font-chillax font-bold">RVN</span> captures
               every detail of your performance with 100Hz precision, providing
               the same level of data analysis used by professional racing teams.
             </p>
@@ -25,7 +25,7 @@
               <div class="flex items-center space-x-3">
                 <div class="w-2 h-2 bg-red-500 rounded-full"></div>
                 <span class="text-white/80 font-general-sans"
-                  >100Hz data collection with 9-axis IMU sensors</span
+                  >10Hz data collection with 9-axis IMU sensors</span
                 >
               </div>
               <div class="flex items-center space-x-3">
