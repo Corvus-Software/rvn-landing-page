@@ -9,29 +9,33 @@
         class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[80vh]"
       >
         <div class="max-w-2xl">
-          <h2
-            class="text-6xl md:text-7xl lg:text-8xl font-satoshi text-white mb-8 leading-tight"
+          <h3
+            class="text-5xl md:text-7xl lg:text-8xl font-satoshi text-white mb-8 leading-tight"
           >
             RIDE WITH
             <br />
             CONFIDENCE
-          </h2>
+          </h3>
           <p
             class="text-xl md:text-2xl text-white/90 font-general-sans max-w-xl"
           >
-            Get feedback and insights for every corner, segment, lap, and
-            session tailored to your riding skill, and style.
+            No matter your skill level, RVN is designed to help you get better session after session. 
+            Our AI-powered insights and detailed analytics give you the tools you need to ride with confidence and improve your skills on every ride. 
+            Attach RVN to your motorcycle and it will learn your riding style, providing personalized feedback and recommendations to help you reach your full potential.
           </p>
         </div>
 
         <div
-          class="w-4/5 ml-auto aspect-[3/5] bg-zinc-900 rounded-3xl overflow-hidden"
+          class="w-4/5 ml-auto aspect-[3/5] bg-zinc-900 rounded-3xl overflow-hidden relative"
         >
+          <img
+            src="/images/image2.jpg"
+            alt="Feature Image"
+            class="w-full h-full object-cover"
+          />
           <div
-            class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20"
-          >
-            <span class="text-lg font-general-sans">Feature Image</span>
-          </div>
+            class="absolute inset-0 bg-gradient-to-r from-black to-transparent"
+          ></div>
         </div>
       </div>
     </div>

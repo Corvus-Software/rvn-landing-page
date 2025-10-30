@@ -10,13 +10,13 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: 'en'
             },
-            title: 'RVN - AI-Powered Motorcycle Data Logger & Performance Analytics',
-            titleTemplate: '%s | RVN',
+            title: 'RVN - AI-Powered Motorcycle & Performance Analytics',
+            titleTemplate: 'RVN - AI-Powered Motorcycle & Performance Analytics',
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { name: 'description', content: 'RVN is a professional-grade AI-powered motorcycle data logger with 100Hz precision, GPS tracking, and advanced performance analytics. Transform your riding with military-grade insights used by racing teams.' },
-                { name: 'keywords', content: 'motorcycle data logger, motorcycle GPS tracker, motorcycle performance analytics, AI motorcycle insights, motorcycle telemetry, riding data analysis, motorcycle lap timer, lean angle sensor, motorcycle IMU, bike data logger, motorcycle tech, riding improvement, track day data, motorcycle safety, crash detection' },
+                { name: 'description', content: 'RVN is a professional-grade AI-powered motorcycle telemetry unit with 100Hz precision, GPS tracking, and advanced performance analytics. Transform your riding with military-grade insights used by racing teams.' },
+                { name: 'keywords', content: 'motorcycle telemetry unit, motorcycle GPS tracker, motorcycle performance analytics, AI motorcycle insights, motorcycle telemetry, riding data analysis, motorcycle lap timer, lean angle sensor, motorcycle IMU, bike telemetry unit, motorcycle tech, riding improvement, track day data, motorcycle safety, crash detection' },
                 { name: 'author', content: 'RVN Technologies Inc.' },
                 { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
                 { name: 'googlebot', content: 'index, follow' },
@@ -24,8 +24,8 @@ export default defineNuxtConfig({
                 // Open Graph / Facebook
                 { property: 'og:type', content: 'website' },
                 { property: 'og:site_name', content: 'RVN' },
-                { property: 'og:title', content: 'RVN - AI-Powered Motorcycle Data Logger & Performance Analytics' },
-                { property: 'og:description', content: 'Professional-grade motorcycle data logger with 100Hz precision, GPS tracking, and AI-powered insights. Used by riders and racing teams worldwide.' },
+                { property: 'og:title', content: 'RVN - AI-Powered Motorcycle & Performance Analytics' },
+                { property: 'og:description', content: 'Professional-grade motorcycle telemetry unit with 100Hz precision, GPS tracking, and AI-powered insights. Used by riders and racing teams worldwide.' },
                 { property: 'og:image', content: '/og-image.jpg' },
                 { property: 'og:image:width', content: '1200' },
                 { property: 'og:image:height', content: '630' },
@@ -33,8 +33,8 @@ export default defineNuxtConfig({
 
                 // Twitter Card
                 { name: 'twitter:card', content: 'summary_large_image' },
-                { name: 'twitter:title', content: 'RVN - AI-Powered Motorcycle Data Logger & Performance Analytics' },
-                { name: 'twitter:description', content: 'Professional-grade motorcycle data logger with 100Hz precision, GPS tracking, and AI-powered insights.' },
+                { name: 'twitter:title', content: 'RVN - AI-Powered Motorcycle & Performance Analytics' },
+                { name: 'twitter:description', content: 'Professional-grade motorcycle telemetry unit with 100Hz precision, GPS tracking, and AI-powered insights.' },
                 { name: 'twitter:image', content: '/twitter-image.jpg' },
                 { name: 'twitter:creator', content: '@RVN' },
 

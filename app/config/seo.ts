@@ -2,14 +2,14 @@
 export const pageSEO = {
   home: {
     title: 'AI-Powered Motorcycle Data Logger & Analytics',
-    description: 'Transform your riding with RVN - the world\'s most advanced AI-powered motorcycle data logger. Professional-grade analytics, 100Hz precision tracking, GPS, and crash detection. Join thousands of riders improving their skills.',
-    keywords: 'motorcycle data logger, AI motorcycle analytics, riding performance tracker, motorcycle GPS, lean angle sensor, track day data logger, motorcycle telemetry system, riding improvement tool',
+    description: 'Transform your riding with RVN - the world\'s most advanced AI-powered motorcycle telemetry unit. Professional-grade analytics, 100Hz precision tracking, GPS, and crash detection. Join thousands of riders improving their skills.',
+    keywords: 'motorcycle telemetry unit, AI motorcycle analytics, riding performance tracker, motorcycle GPS, lean angle sensor, track day telemetry unit, motorcycle telemetry system, riding improvement tool',
     structuredData: [
       {
         '@context': 'https://schema.org',
         '@type': 'Product',
         name: 'RVN Motorcycle Data Logger',
-        description: 'Professional-grade AI-powered motorcycle data logger with 100Hz precision, GPS tracking, and advanced performance analytics',
+        description: 'Professional-grade AI-powered motorcycle telemetry unit with 100Hz precision, GPS tracking, and advanced performance analytics',
         brand: { '@type': 'Brand', name: 'RVN' },
         offers: {
           '@type': 'AggregateOffer',
@@ -28,8 +28,8 @@ export const pageSEO = {
 
   features: {
     title: 'Features That Fuel Performance - Motorcycle Data Logger',
-    description: 'Discover RVN\'s cutting-edge motorcycle data logger features: 100Hz precision tracking, 9-axis IMU sensors, ±1m GPS accuracy, AI-powered analytics, automatic lap detection, and emergency crash detection. Professional-grade technology for every rider.',
-    keywords: 'motorcycle data logger features, 9-axis IMU sensor, GPS motorcycle tracker, automatic lap timer, crash detection motorcycle, lean angle sensor, motorcycle telemetry, AI riding analytics, motorcycle performance tracking',
+    description: 'Discover RVN\'s cutting-edge motorcycle telemetry unit features: 100Hz precision tracking, 9-axis IMU sensors, ±1m GPS accuracy, AI-powered analytics, automatic lap detection, and emergency crash detection. Professional-grade technology for every rider.',
+    keywords: 'motorcycle telemetry unit features, 9-axis IMU sensor, GPS motorcycle tracker, automatic lap timer, crash detection motorcycle, lean angle sensor, motorcycle telemetry, AI riding analytics, motorcycle performance tracking',
     structuredData: [
       {
         '@context': 'https://schema.org',
@@ -89,7 +89,7 @@ export const pageSEO = {
   aboutUs: {
     title: 'About Us - Built by Riders for Riders',
     description: 'Meet the team behind RVN. From weekend warriors to professional racers, we\'re democratizing motorcycle performance analytics. Our mission: make advanced data insights accessible to every rider worldwide.',
-    keywords: 'RVN company, motorcycle tech startup, rider-focused technology, motorcycle safety innovation, riding analytics company, motorcycle data logger company, riding community platform',
+    keywords: 'RVN company, motorcycle tech startup, rider-focused technology, motorcycle safety innovation, riding analytics company, motorcycle telemetry unit company, riding community platform',
     structuredData: [
       {
         '@context': 'https://schema.org',
@@ -109,14 +109,14 @@ export const pageSEO = {
 
   waitlist: {
     title: 'Join the Waitlist - Pre-Order RVN Motorcycle Data Logger',
-    description: 'Reserve your RVN motorcycle data logger today. Early bird pricing $399 (Save $100). Professional-grade 100Hz tracking, AI analytics, GPS, crash detection. Limited spots available. Ships Q2 2026.',
-    keywords: 'RVN waitlist, motorcycle data logger pre-order, buy motorcycle tracker, RVN pricing, motorcycle telemetry device purchase, data logger early bird, motorcycle GPS pre-order',
+    description: 'Reserve your RVN motorcycle telemetry unit today. Early bird pricing $399 (Save $100). Professional-grade 100Hz tracking, AI analytics, GPS, crash detection. Limited spots available. Ships Q2 2026.',
+    keywords: 'RVN waitlist, motorcycle telemetry unit pre-order, buy motorcycle tracker, RVN pricing, motorcycle telemetry device purchase, telemetry unit early bird, motorcycle GPS pre-order',
     structuredData: [
       {
         '@context': 'https://schema.org',
         '@type': 'Product',
         name: 'RVN Professional Motorcycle Data Logger',
-        description: 'Professional-grade motorcycle data logger with 100Hz precision, AI analytics, GPS tracking, and crash detection',
+        description: 'Professional-grade motorcycle telemetry unit with 100Hz precision, AI analytics, GPS tracking, and crash detection',
         image: 'https://www.getrvn.co/product-image.jpg',
         brand: { '@type': 'Brand', name: 'RVN' },
         offers: {

@@ -1,8 +1,18 @@
 <template>
   <div class="min-h-screen bg-black">
-    <div class="w-full h-screen relative overflow-hidden bg-gradient-to-br from-red-950 via-red-900 to-black">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(220,38,38,0.15),transparent_50%)]"></div>
+    <div class="w-full h-screen relative overflow-hidden">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 z-0 w-full h-full object-cover"
+    >
+      <source src="/images/cam-clip.mp4" type="video/mp4" />
+    </video>
 
+    <!-- Optional: Dark overlay for better text readability -->
+    <div class="absolute inset-0 z-[1] bg-black/30"></div>
       <div class="relative z-10 h-full flex items-center">
         <div class="container mx-auto px-4 md:px-20 lg:px-32">
           <div class="max-w-4xl">

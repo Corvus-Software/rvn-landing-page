@@ -21,17 +21,17 @@ import RidingYourOwnWay from "~/components/index-sections/RidingYourOwnWay.vue";
 useSeoMeta({
   title: "AI-Powered Motorcycle Data Logger & Analytics",
   description:
-    "Transform your riding with RVN - the world's most advanced AI-powered motorcycle data logger. Professional-grade analytics, 100Hz precision tracking, GPS, and crash detection. Join thousands of riders improving their skills.",
+    "Transform your riding with RVN - the world's most advanced AI-powered motorcycle telemetry unit. Professional-grade analytics, 100Hz precision tracking, GPS, and crash detection. Join thousands of riders improving their skills.",
   ogTitle: "RVN - The World Is Your Track | AI-Powered Motorcycle Data Logger",
   ogDescription:
-    "Professional-grade motorcycle data logger with AI-powered insights. 100Hz precision, GPS tracking, and performance analytics used by riders worldwide.",
+    "Professional-grade motorcycle telemetry unit with AI-powered insights. 100Hz precision, GPS tracking, and performance analytics used by riders worldwide.",
   ogUrl: "https://www.getrvn.co",
   ogImage: "/og-image.jpg",
   twitterCard: "summary_large_image",
   twitterTitle:
     "RVN - The World Is Your Track | AI-Powered Motorcycle Data Logger",
   twitterDescription:
-    "Professional-grade motorcycle data logger with AI-powered insights.",
+    "Professional-grade motorcycle telemetry unit with AI-powered insights.",
   twitterImage: "/twitter-image.jpg",
 });
 
@@ -45,7 +45,7 @@ useHead({
         "@type": "Product",
         name: "RVN Motorcycle Data Logger",
         description:
-          "Professional-grade AI-powered motorcycle data logger with 100Hz precision, GPS tracking, and advanced performance analytics",
+          "Professional-grade AI-powered motorcycle telemetry unit with 100Hz precision, GPS tracking, and advanced performance analytics",
         brand: { "@type": "Brand", name: "RVN" },
         offers: {
           "@type": "AggregateOffer",

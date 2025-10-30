@@ -1,11 +1,35 @@
 <template>
   <div class="w-full h-screen relative overflow-hidden">
-    <div
-      class="absolute inset-0 z-0 bg-gradient-to-br from-red-950 via-red-900 to-black"
+    <div class="w-full h-screen relative overflow-hidden">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 z-0 w-full h-full object-cover"
     >
-      <div
-        class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(220,38,38,0.15),transparent_50%)]"
-      ></div>
+      <source src="/images/home-page.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Optional: Dark overlay for better text readability -->
+    <div class="absolute inset-0 z-[1] bg-black/30"></div>
+      <div class="relative z-10 h-full flex items-center">
+        <div class="container mx-auto px-4 md:px-20 lg:px-32">
+          <div class="max-w-4xl">
+            <h1 class="text-7xl md:text-8xl lg:text-9xl font-satoshi font-[900] text-white mb-8 leading-tight">
+              THE WORLD
+              <br/>
+              IS YOUR
+              <br/>
+              TRACK
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-general-sans">
+              Discover the cutting-edge technology that makes RVN the ultimate riding companion for every motorcycle
+              enthusiast.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="relative z-10 h-full flex items-center">
@@ -21,7 +45,7 @@
           <p
             class="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-general-sans"
           >
-            RVN is your AI-powered data logger that provides insights and
+            RVN is your AI-powered telemetry unit that provides insights and
             post-ride analysis to help you become a better rider.
           </p>
           <button

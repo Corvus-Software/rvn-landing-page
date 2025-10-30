@@ -6,7 +6,7 @@ export default defineEventHandler(() => {
     },
     body: `# www.rvn.com
 
-This site showcases RVN - an AI-powered motorcycle data logger.
+This site showcases RVN - an AI-powered motorcycle telemetry unit.
 
 ## Contact
 Email: info@rvn.com

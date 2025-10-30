@@ -33,7 +33,7 @@
           </NuxtLink>
 
           <!-- Logout button -->
-          <button
+          <!-- <button
             @click="handleLogout"
             class="header-link relative group text-white hover:text-red-400 transition-colors"
           >
@@ -41,7 +41,7 @@
             <span
               class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-400 group-hover:w-full transition-all duration-300"
             ></span>
-          </button>
+          </button> -->
         </div>
 
         <!-- Desktop CTA -->

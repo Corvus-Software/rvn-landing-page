@@ -1,8 +1,11 @@
 <template>
     <div class="min-h-screen bg-black">
-        <div class="w-full h-screen relative overflow-hidden bg-gradient-to-br from-red-950 via-red-900 to-black">
-            <div class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
-
+        <div class="w-full h-screen relative overflow-hidden">
+            <div
+                class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('/images/image5.jpg')"
+                >
+                </div>
             <div class="relative z-10 h-full flex items-center">
                 <div class="container mx-auto px-4 md:px-20 lg:px-32">
                     <div class="max-w-4xl">
@@ -87,45 +90,6 @@
                                 <p class="text-white/80 font-general-sans">{{ story.description }}</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-full py-24 bg-black">
-            <div class="container mx-auto px-4 md:px-20 lg:px-32">
-                <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-16">Meet the Team</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="md:col-span-2 bg-zinc-900 rounded-3xl p-8 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-br from-red-600/10 to-orange-600/10"></div>
-                        <div class="relative z-10 flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-8">
-                            <div class="w-32 h-32 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center text-4xl font-bold text-white">
-                                A
-                            </div>
-                            <div class="text-center lg:text-left">
-                                <h3 class="text-3xl font-satoshi font-bold text-white mb-2">Alex Rodriguez</h3>
-                                <h4 class="text-xl text-red-400 font-general-sans mb-4">Founder & CEO</h4>
-                                <p class="text-white/80 font-general-sans mb-4">
-                                    Former MotoGP telemetry engineer turned entrepreneur. 15 years of racing data experience, passionate about making pro-level analytics accessible to every rider.
-                                </p>
-                                <div class="text-sm text-white/60 font-general-sans">Rides: Ducati Panigale V4S, Yamaha R1M</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                            v-for="(member, index) in teamMembers"
-                            :key="index"
-                            class="bg-zinc-900 rounded-2xl p-6 text-center"
-                    >
-                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-4">
-                            {{ member.initial }}
-                        </div>
-                        <h3 class="text-xl font-satoshi font-bold text-white mb-1">{{ member.name }}</h3>
-                        <h4 class="text-red-400 font-general-sans mb-3">{{ member.role }}</h4>
-                        <p class="text-white/70 font-general-sans text-sm mb-3">{{ member.description }}</p>
-                        <div class="text-xs text-white/50 font-general-sans">{{ member.bike }}</div>
                     </div>
                 </div>
             </div>
@@ -283,26 +247,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-full py-24 bg-gradient-to-br from-red-600 to-orange-600">
-            <div class="container mx-auto px-4 md:px-20 lg:px-32 text-center">
-                <h2 class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-8">Join Our Mission</h2>
-                <p class="text-xl text-white/90 font-general-sans max-w-2xl mx-auto mb-12">
-                    Whether you're a developer, engineer, marketer, or just passionate about motorcycles, we're always looking for talented people to join our team.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="font-sans px-12 py-6 bg-white text-red-600 rounded-full hover:bg-gray-100 transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-3 group text-lg font-bold">
-                        <span class="tracking-[1px] uppercase">View Careers</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <button class="font-sans px-12 py-6 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors duration-200 shadow-lg inline-flex items-center justify-center space-x-3 group text-lg font-bold">
-                        <span class="tracking-[1px] uppercase">Contact Us</span>
-                    </button>
                 </div>
             </div>
         </div>

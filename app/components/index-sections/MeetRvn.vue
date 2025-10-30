@@ -9,10 +9,10 @@
         <h2
           class="text-5xl md:text-6xl font-satoshi font-[900] text-white mb-4"
         >
-          Meet RVN
+          Introducing RVN
         </h2>
         <p class="text-xl text-white/90 font-general-sans max-w-2xl mb-16">
-          The future of motorcycle data analysis in your pocket
+          The future of motorcycle data analysis on your bike and in your pocket.
         </p>
       </div>
 
@@ -30,11 +30,11 @@
             </div>
             <div>
               <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
-                Place Anywhere
+                Attach Anywhere
               </h3>
               <p class="text-white/70 font-general-sans">
-                Compact, and small enough to be placed anywhere, in any
-                orientation
+                RVN is small and compact enough to be placed anywhere, in any
+                orientation. Just attach it to your motorcycle and go.
               </p>
             </div>
           </div>
@@ -46,16 +46,16 @@
               <div
                 class="w-full h-full bg-zinc-800 flex items-center justify-center text-white/20"
               >
-                <span class="text-lg font-general-sans">App Interface</span>
+                <span class="text-lg font-general-sans">RVN Console Image</span>
               </div>
             </div>
             <div>
               <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
-                Mobile App
+                RVN Console App
               </h3>
               <p class="text-white/70 font-general-sans">
-                Real-time tracking, insights, and feedback placed in a
-                beautifully designed interface
+                RVN records then sends tracking, insights, and feedback placed in a
+                beautifully designed interface on your phone, and computer.
               </p>
             </div>
           </div>
@@ -74,11 +74,11 @@
             </div>
             <div>
               <h3 class="text-2xl font-satoshi font-bold text-white mb-2">
-                Throttle AI Analysis
+                Throttle AI
               </h3>
               <p class="text-white/70 font-general-sans">
-                Advanced insights and personalized recommendations for
-                improvement powered by our Throttle AI
+                Advanced insights and personalized recommendations for every riding style and track
+                powered by our Throttle AI engine.
               </p>
             </div>
           </div>

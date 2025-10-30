@@ -1,62 +1,18 @@
 <template>
   <div class="min-h-screen bg-black">
-    <div class="w-full py-24 bg-black pt-32">
-      <div class="container mx-auto px-4 md:px-20 lg:px-32">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div class="space-y-8">
-            <div
-              class="bg-zinc-900 rounded-3xl h-[500px] relative overflow-hidden"
-            >
-              <div
-                class="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"
-              ></div>
-              <div class="relative z-10 h-full p-8">
-                <div class="flex items-center justify-center h-full">
-                  <div class="text-center text-white">
-                    <div
-                      class="w-56 h-56 bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl transform hover:scale-105 transition-transform duration-500"
-                    >
-                      <div class="text-6xl font-satoshi font-bold">RVN</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="relative">
-              <div class="flex space-x-4 overflow-x-auto scrollbar-hide">
-                <div
-                  v-for="(image, index) in productImages"
-                  :key="index"
-                  class="flex-shrink-0 w-24 h-24 bg-zinc-900 rounded-xl relative overflow-hidden cursor-pointer"
-                  :class="{
-                    'ring-2 ring-red-500': activeProductImage === index,
-                  }"
-                  @click="setActiveProductImage(index)"
-                >
-                  <div class="absolute inset-0" :class="image.gradient"></div>
-                  <div
-                    class="relative z-10 h-full flex items-center justify-center text-white"
-                  >
-                    <div class="text-sm font-satoshi font-bold">
-                      {{ image.label }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="max-w-2xl">
-            <h1
-              class="text-7xl md:text-8xl font-satoshi font-[900] text-white mb-6 leading-tight"
-            >
-              RVN
-            </h1>
+<div class="w-full py-24 bg-black pt-32">
+  <div class="container mx-auto px-4 md:px-20 lg:px-32">
+    <div class="flex justify-center items-center">
+      <div class="max-w-2xl">
+        <h1
+          class="text-7xl md:text-8xl font-satoshi font-[900] text-white mb-6 leading-tight"
+        >
+          RVN
+        </h1>
             <h2
               class="text-3xl md:text-4xl font-satoshi font-bold text-red-400 mb-8"
             >
-              Professional Motorcycle Data Logger
+              Professional Motorcycle Telemetry Unit
             </h2>
 
             <p class="text-xl text-white/90 mb-8 font-general-sans">
@@ -1238,7 +1194,7 @@ const toggleFaq = (index) => {
 };
 
 definePageMeta({
-  title: "RVN Motorcycle Data Logger - Join Waitlist",
+  title: "RVN Motorcycle Telemetry Unit - Join Waitlist",
   description:
     "Professional-grade motorcycle analytics. Join the waitlist for exclusive early access.",
 });
