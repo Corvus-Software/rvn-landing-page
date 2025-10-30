@@ -20,6 +20,8 @@ export default {
                 sans: ['Gilroy', 'system-ui', '-apple-system', 'sans-serif'],
                 satoshi: ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
                 'general-sans': ['General Sans', 'system-ui', '-apple-system', 'sans-serif'],
+                chillax: ['Chillax', 'sans-serif'],
+
             },
         },
     },
