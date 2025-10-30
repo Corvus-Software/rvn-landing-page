@@ -9,6 +9,7 @@
   >
     <nav class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
+        <!-- Logo on the left -->
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center group">
             <span
@@ -18,8 +19,8 @@
           </NuxtLink>
         </div>
 
-        <!-- Desktop nav -->
-        <div class="hidden md:flex items-center space-x-8">
+        <!-- Desktop nav - CENTERED -->
+        <div class="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
           <NuxtLink
             v-for="item in navItems"
             :key="item.to"
@@ -31,20 +32,9 @@
               class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
             ></span>
           </NuxtLink>
-
-          <!-- Logout button -->
-          <!-- <button
-            @click="handleLogout"
-            class="header-link relative group text-white hover:text-red-400 transition-colors"
-          >
-            Logout
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-400 group-hover:w-full transition-all duration-300"
-            ></span>
-          </button> -->
         </div>
 
-        <!-- Desktop CTA -->
+        <!-- Desktop CTA on the right -->
         <NuxtLink to="/waitlist" class="hidden md:flex">
           <button
             class="header-link-btn px-10 py-4 bg-black text-white rounded-full font-bold hover:bg-accent hover:border-accent hover:text-white transition-colors duration-200 shadow-md"
@@ -98,6 +88,7 @@
         class="md:hidden py-4 border-t border-muted/20"
       >
         <div class="flex flex-col space-y-2">
+          <!-- Same nav items as desktop -->
           <NuxtLink
             v-for="item in navItems"
             :key="item.to"
@@ -109,12 +100,12 @@
           </NuxtLink>
 
           <!-- Logout button for mobile -->
-          <button
+          <!-- <button
             @click="handleLogout"
             class="header-link block px-4 py-3 text-white hover:text-red-400 transition-colors text-left"
           >
             Logout
-          </button>
+          </button> -->
 
           <NuxtLink to="/waitlist" class="px-4">
             <button
