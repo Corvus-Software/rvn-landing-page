@@ -3,8 +3,8 @@
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
     :class="
       scrolled || mobileMenuOpen
-        ? 'bg-background/80 backdrop-blur-md border-b border-muted/20'
-        : 'bg-transparent'
+        ? 'bg-background/80 backdrop-blur-md border-muted/20'
+        : 'bg-transparent hover:bg-background/80 hover:backdrop-blur-md hover:border-muted/20'
     "
   >
     <nav class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -25,11 +25,11 @@
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
-            class="header-link relative group text-white hover:text-accent"
+            class="header-link relative link-group text-white hover:text-accent"
           >
             {{ item.label }}
             <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary link-group-hover:w-full transition-all duration-300"
             ></span>
           </NuxtLink>
         </div>
@@ -191,5 +191,9 @@ watch(
   letter-spacing: 2px;
   line-height: 1.33;
   text-transform: uppercase;
+}
+
+.link-group:hover .link-group-hover\:w-full {
+  width: 100%;
 }
 </style>
